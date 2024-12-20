@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stockbot Chat UI</title>
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Your Chat History</h2>
+      <ul id="chat-history">
+        <li>Hello, how can I help?</li>
+        <li>Should I buy BTC?</li>
+        <li>What's the trend for Tesla?</li>
+      </ul>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-area">
+      <div class="header">
+        <h2>Stockbot</h2>
+        <button id="login-button">Login</button>
+      </div>
+
+      <div class="chat-window">
+        <div id="bot-response" class="message bot">
+          Welcome to Stockbot! How can I assist you?
+        </div>
+        <div id="user-question" class="message user"></div>
+      </div>
+
+      <div class="input-area">
+        <input type="text" id="symbol" placeholder="Enter Coin Pair (e.g., BTCUSDT)">
+
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../static/script.js"></script>
+</body>
+</html>
